@@ -13,3 +13,14 @@ I will create a folder called `assignment`, which is where the `Final-Project` J
 
 ## Jupyter File Steps
 These are the steps on how I create the Jupyter file.
+
+First, I will import the following Python features into my Jupyter notebook file:
+
+```
+%matplotlib inline
+
+import pandas as pd
+import geopandas as gpd
+
+import leafmap
+```
