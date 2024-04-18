@@ -12,7 +12,7 @@ On Python, I will install it by adding `pip install leafmap`. When I import it, 
 I will create a folder called `assignment`, which is where the `Final-Project` Jupyter Notebook Python file will be located.
 
 ## Jupyter File Steps
-These are the steps on how I create the Jupyter file.
+These are the steps on how I create the Jupyter notebook file.
 
 First, I will import the following Python features into my Jupyter notebook file:
 
