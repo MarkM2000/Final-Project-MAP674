@@ -1,9 +1,6 @@
 # Final-Project-MAP674
 This is the repository for my final project for MAP674. This project will see me incorporate the features I've learned from the assignments in MAP 674 to try to build a map and analyze it. This shows a step-by-step on how my project will be completed.
 
-## Table of Contents
-- [Introduction] (#Introduction)
-- [Jupyter File Steps] (#Jupyter File Steps)
 ## Introduction
 This section will introduce the final project. It introduces the topic I plan to use for the project and the initial steps to do the project.
 ### Topic
