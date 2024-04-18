@@ -10,3 +10,6 @@ The first thing I will do is create a Jupyter notebook file (`ipynb`), which cre
 On Python, I will install it by adding `pip install leafmap`. When I import it, I will likely use one of the following on <a href="https://leafmap.org/get-started/">this link</a> or add `import leafmap` into my `ipynb` file.
 
 I will create a folder called `assignment`, which is where the `Final-Project` Jupyter Notebook Python file will be located.
+
+# Jupyter File Steps
+These are the steps on how I create the Jupyter file.
