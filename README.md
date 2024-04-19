@@ -21,6 +21,7 @@ First, I will import the following Python features into my Jupyter notebook file
 
 import pandas as pd
 import geopandas as gpd
+import matplotlib.pyplot as plt
 
 import leafmap
 ```
@@ -33,3 +34,11 @@ I will be clipping points by using the `gpd.read_file` read files that consist o
 ### Exporting the file
 ![Exporting](screenshots/Exporting.png)
 The `ne_10m_admin_0_countries` file, which was original downloaded from <a href="https://www.naturalearthdata.com/downloads/10m-cultural-vectors/10m-admin-0-countries/">Natural Earth Data</a>. Once downloaded, I will open up the ZIP folder, which is `ne_10m_admin_0_countries.zip` and it will show the files contained in it. The file will be exported as a geojson file, but to do that, I will select `ne_10m_admin_0_countries.shp` from the ZIP folder, and export it as a geojson file. To export the file, right click it select `Save Features As` in the export tab. It looks something like this above, and when finished, select ok.
+
+### Importing the data
+I will import the following data into the file:
+```
+bbox = gpd.read_file('https://d2ad6b4ur7yvpq.cloudfront.net/naturalearth-3.3.0/ne_10m_wgs84_bounding_box.geojson')
+countries = gpd.read_file('ne_10m_admin_0_countries.geojson')
+pop_places = gpd.read_file('https://d2ad6b4ur7yvpq.cloudfront.net/naturalearth-3.3.0/ne_10m_populated_places_simple.geojson')
+```
