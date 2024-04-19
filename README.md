@@ -29,3 +29,5 @@ I will then create several geopandas read files (`gpd.read_file`) consisting of 
 
 ## Clipping points
 I will be clipping points by using the `gpd.read_file` read files that consist of clipping points.
+
+The `ne_10m_admin_0_countries` file, which was original downloaded from <a href="https://www.naturalearthdata.com/downloads/10m-cultural-vectors/10m-admin-0-countries/">Natural Earth Data</a>. The file will be exported as a geojson file, but to do that, I will select `ne_10m_admin_0_countries.shp` from the ZIP folder, and export it as a geojson file.
