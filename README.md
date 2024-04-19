@@ -42,3 +42,17 @@ bbox = gpd.read_file('https://d2ad6b4ur7yvpq.cloudfront.net/naturalearth-3.3.0/n
 countries = gpd.read_file('ne_10m_admin_0_countries.geojson')
 pop_places = gpd.read_file('https://d2ad6b4ur7yvpq.cloudfront.net/naturalearth-3.3.0/ne_10m_populated_places_simple.geojson')
 ```
+
+Once imported, I will include this below, which will produce a map of the world.
+
+```
+fig, ax = plt.subplots()
+
+base_color = '#f0f0f0'
+border_color = base_color
+marker_color = '#448ee4'
+
+bbox.plot(ax=ax, color=base_color, zorder=0);
+countries.plot(ax=ax, edgecolor=border_color, color='#ffffff', zorder=1);
+pop_places.plot(ax=ax, color=marker_color, markersize=1, zorder=2);
+```
