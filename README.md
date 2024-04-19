@@ -25,4 +25,4 @@ import geopandas as gpd
 import leafmap
 ```
 
-I will then create several geopandas read files (`gpd.read_file`) consisting of CloudFront files that I plan to use.
+I will then create several geopandas read files (`gpd.read_file`) consisting of CloudFront files that I plan to use. Stuff I plan to do include clipping points and creating spatial overlays.
