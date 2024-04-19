@@ -24,3 +24,5 @@ import geopandas as gpd
 
 import leafmap
 ```
+
+I will then create several geopandas read files (`gpd.read_file`) consisting of CloudFront files that I plan to use.
