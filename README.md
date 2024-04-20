@@ -44,6 +44,9 @@ countries = gpd.read_file('ne_10m_admin_0_countries.geojson')
 pop_places = gpd.read_file('https://d2ad6b4ur7yvpq.cloudfront.net/naturalearth-3.3.0/ne_10m_populated_places_simple.geojson')
 ```
 
+### Plotting the country
+This will show how I plot the country.
+
 Once imported, I will include this below, which will produce a map of the world.
 
 ```
