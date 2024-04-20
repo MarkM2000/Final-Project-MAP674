@@ -40,7 +40,8 @@ The `ne_10m_admin_0_countries` file, which was original downloaded from <a href=
 I will import the following data into the file:
 ```
 bbox = gpd.read_file('https://d2ad6b4ur7yvpq.cloudfront.net/naturalearth-3.3.0/ne_10m_wgs84_bounding_box.geojson')
-countries = gpd.read_file('ne_10m_admin_0_countries.geojson')
+ocean_raw = gpd.read_file('https://d2ad6b4ur7yvpq.cloudfront.net/naturalearth-3.3.0/ne_110m_ocean.geojson')
+countries = gpd.read_file('/Users/markmarji/Documents/GitHub/Final-Project-MAP674/data/ne_10m_admin_0_countries.geojson')
 pop_places = gpd.read_file('https://d2ad6b4ur7yvpq.cloudfront.net/naturalearth-3.3.0/ne_10m_populated_places_simple.geojson')
 ```
 
@@ -63,7 +64,18 @@ pop_places.plot(ax=ax, color=marker_color, markersize=1, zorder=2);
 
 I will use `australia_poly = australia.geometry.unary_union` to determine what type of polygon is it. When I run it, it says that it is a MultiPolygon. Afterwards, I will use `australia_places = pop_places[pop_places.geometry.intersects(australia_poly)]` to create new GeoDataFrame of points that intersect with the clipping polygon.
 
-### Plotting the clipped points features for Australia
+Once those are added, I will add the following feature below to help set up the next step, which is to plot the clipped points for Australia.
+```
+fig, ax = plt.subplots()
+
+base_color = '#f0f0f0'
+marker_color = '#448ee4'
+
+australia.plot(ax=ax, color=base_color, zorder=0);
+australia_places.plot(ax=ax, color=marker_color, markersize=30, zorder=1);
+```
+
+### Plotting the clipped points for Australia
 In this section, I demonstrate how I plot the clipped points features for Australia.
 
 ## Accessing the notebook
