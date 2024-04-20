@@ -61,11 +61,7 @@ countries.plot(ax=ax, edgecolor=border_color, color='#ffffff', zorder=1);
 pop_places.plot(ax=ax, color=marker_color, markersize=1, zorder=2);
 ```
 
-I will use `australia.geom_type.unique()` to determine what type of polygon is it. When I run it, it says that it is a MultiPolygon. I will then add this below it:
-```
-# use unary_union to combine polygons into single
-australia_poly = australia.geometry.unary_union
-```
+I will use `australia_poly = australia.geometry.unary_union` to determine what type of polygon is it. When I run it, it says that it is a MultiPolygon. Afterwards, I will use `australia_places = pop_places[pop_places.geometry.intersects(australia_poly)]` to create new GeoDataFrame of points that intersect with the clipping polygon.
 
 ### Plotting the clipped points features for Australia
 In this section, I demonstrate how I plot the clipped points features for Australia.
