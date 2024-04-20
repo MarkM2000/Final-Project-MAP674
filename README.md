@@ -69,3 +69,6 @@ australia_poly = australia.geometry.unary_union
 
 ### Plotting the clipped points features for Australia
 In this section, I demonstrate how I plot the clipped points features for Australia.
+
+## Accessing the notebook
+I will have more details on how I completed this project in my notebook. To access it, click the assignment folder and it will show it.
