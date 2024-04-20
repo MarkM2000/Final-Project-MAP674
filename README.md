@@ -35,8 +35,12 @@ I will be clipping points by using the `gpd.read_file` read files that consist o
 ### Filtering the Australia map
 The `ne_50m_admin_0_countries` file, which was original downloaded from <a href="https://www.naturalearthdata.com/downloads/50m-cultural-vectors/50m-admin-0-countries-2/">Natural Earth Data</a>. Once downloaded, I will open up the ZIP folder, which is `ne_50m_admin_0_countries.zip` and it will show the files contained in it. For the file itself, I plan to focus on Australia. To do that, I will right click "ne_50m_admin_0_countries" and select the "Filter" section. It will open this file (see above), and to fix this, I will click on "NAME" in the Fields section, and select Australia from the "Sample" section. It will produce `"NAME" = 'Australia'` once both steps are done, and once I click ok, it produces Australia.
 
+I also will use the `ne_50m_populated_places` from <a href="https://www.naturalearthdata.com/downloads/50m-cultural-vectors/50m-populated-places/">this link</a> and use the same process for the `ne_50m_admin_0_countries`. I will create a fields and sample that produces `""SOV0NAME" = 'Australia'`. 
+
 ### Exporting the file
 To export the file, right click it select `Save Features As` in the export tab. The name of the file will be `ne_50m_admin_0_australia` and it will be as a geojson file. It looks something like this above, and when finished, select ok.
+
+I will do the same thing for my populated places file and export it the same process I did with the other file. The file will be called `ne_50m_populated_places_australia.geojson`.
 
 ### Importing the data
 I will import the following data into the file:
