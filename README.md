@@ -45,7 +45,7 @@ pop_places = gpd.read_file('https://d2ad6b4ur7yvpq.cloudfront.net/naturalearth-3
 ```
 
 ### Plotting the country
-This will show how I plot the country.
+This will show how I plot the country. In this case, Australia will be used.
 
 Once imported, I will include this below, which will produce a map of the world.
 
@@ -60,3 +60,12 @@ bbox.plot(ax=ax, color=base_color, zorder=0);
 countries.plot(ax=ax, edgecolor=border_color, color='#ffffff', zorder=1);
 pop_places.plot(ax=ax, color=marker_color, markersize=1, zorder=2);
 ```
+
+I will use `australia.geom_type.unique()` to determine what type of polygon is it. When I run it, it says that it is a MultiPolygon. I will then add this below it:
+```
+# use unary_union to combine polygons into single
+australia_poly = australia.geometry.unary_union
+```
+
+### Plotting the clipped points features for Australia
+In this section, I demonstrate how I plot the clipped points features for Australia.
