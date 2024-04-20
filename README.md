@@ -45,10 +45,8 @@ I will do the same thing for my populated places file and export it the same pro
 ### Importing the data
 I will import the following data into the file:
 ```
-bbox = gpd.read_file('https://d2ad6b4ur7yvpq.cloudfront.net/naturalearth-3.3.0/ne_50m_wgs84_bounding_box.geojson')
-ocean_raw = gpd.read_file('https://d2ad6b4ur7yvpq.cloudfront.net/naturalearth-3.3.0/ne_50m_ocean.geojson')
-countries = gpd.read_file('/Users/markmarji/Documents/GitHub/Final-Project-MAP674/data/ne_50m_admin_0_countries.geojson')
-pop_places = gpd.read_file('https://d2ad6b4ur7yvpq.cloudfront.net/naturalearth-3.3.0/ne_50m_populated_places.geojson')
+countries = gpd.read_file('/Users/markmarji/Documents/GitHub/Final-Project-MAP674/data/ne_50m_admin_0_australia.geojson')
+pop_places = gpd.read_file('/Users/markmarji/Documents/GitHub/Final-Project-MAP674/data/ne_50m_populated_places_australia.geojson')
 ```
 
 ### Plotting the country
@@ -83,6 +81,9 @@ australia_places.plot(ax=ax, color=marker_color, markersize=30, zorder=1);
 
 ### Plotting the clipped points for Australia
 In this section, I demonstrate how I plot the clipped points features for Australia.
+
+## Leafmap
+Another feature I plan to use is Leafmap. I will use Australia and learn the Leafmap features.
 
 ## Accessing the notebook
 I will have more details on how I completed this project in my notebook. To access it, click the assignment folder and it will show it.
