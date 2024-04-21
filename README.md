@@ -82,6 +82,23 @@ australia_places.plot(ax=ax, color=marker_color, markersize=30, zorder=1);
 ### Plotting the clipped points for Australia
 In this section, I demonstrate how I plot the clipped points features for Australia.
 
+What I did is apply this:
+```
+fig, ax = plt.subplots()
+
+base_color = '#f0f0f0'
+marker_color = '#448ee4'
+
+australia.plot(ax=ax, color=base_color, zorder=0);
+australia_places.plot(ax=ax, color=marker_color, markersize=30, zorder=1);
+
+australia_places.apply(lambda x: ax.annotate(text=x['NAME'],
+                                  xy=x.geometry.coords[0],
+                                  xytext=(6, 6),
+                                  textcoords="offset points"),
+                              axis=1);
+```
+
 ## Leafmap
 Another feature I plan to use is Leafmap. I will use Australia and learn the Leafmap features. I will apply the steps that were used in <a href="https://leafmap.org/">this link</a> to create examples of Leafmaps of Australia. To create a Leafmap using Australia, I will use -25 and 133 for the center.
 
