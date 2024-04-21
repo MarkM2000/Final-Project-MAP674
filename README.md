@@ -38,7 +38,7 @@ The `ne_50m_admin_0_countries` file, which was original downloaded from <a href=
 I also will use the `ne_50m_populated_places` from <a href="https://www.naturalearthdata.com/downloads/50m-cultural-vectors/50m-populated-places/">this link</a> and use the same process for the `ne_50m_admin_0_countries`. I will create a fields and sample that produces `""SOV0NAME" = 'Australia'`. 
 
 ### Exporting the file
-To export the file, right click it select `Save Features As` in the export tab. The name of the file will be `ne_50m_admin_0_australia` and it will be as a geojson file. It looks something like this above, and when finished, select ok.
+To export the file, right click it and select `Save Features As` in the export tab. The name of the file will be `ne_50m_admin_0_australia` and it will be as a geojson file. It looks something like this above, and when finished, select ok.
 
 I will do the same thing for my populated places file and export it the same process I did with the other file. The file will be called `ne_50m_populated_places_australia.geojson`.
 
@@ -83,7 +83,21 @@ australia_places.plot(ax=ax, color=marker_color, markersize=30, zorder=1);
 In this section, I demonstrate how I plot the clipped points features for Australia.
 
 ## Leafmap
-Another feature I plan to use is Leafmap. I will use Australia and learn the Leafmap features.
+Another feature I plan to use is Leafmap. I will use Australia and learn the Leafmap features. I will apply the steps that were used in <a href="https://leafmap.org/">this link</a> to create examples of Leafmaps of Australia. To create a Leafmap using Australia, I will use -25 and 133 for the center.
+
+I can create a simple Leafmap map for Australia. I did this by adding the following link:
+```
+import leafmap
+m = leafmap.Map(center=(-25, 133), zoom=4)
+m
+```
+
+I also created a Leafmap topo map for Australia. I used the same steps I did for the simple example, but this time, I have added `m.add_basemap("OpenTopoMap")` to it. It produces this:
+```
+m = leafmap.Map(center=(-25, 133), zoom=4)
+m.add_basemap("OpenTopoMap")
+m
+```
 
 ## Accessing the notebook
 I will have more details on how I completed this project in my notebook. To access it, click the assignment folder and it will show it.
