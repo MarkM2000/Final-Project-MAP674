@@ -33,7 +33,7 @@ I will then create several geopandas read files (`gpd.read_file`) consisting of 
 I will be clipping points by using the `gpd.read_file` read files that consist of clipping points.
 
 ### Filtering the Australia map
-![image](screenshots/Query Builder.png)
+![image](screenshots/Query-Builder.png)
 The `ne_50m_admin_0_countries` file, which was original downloaded from <a href="https://www.naturalearthdata.com/downloads/50m-cultural-vectors/50m-admin-0-countries-2/">Natural Earth Data</a>. Once downloaded, I will open up the ZIP folder, which is `ne_50m_admin_0_countries.zip` and it will show the files contained in it. For the file itself, I plan to focus on Australia. To do that, I will right click "ne_50m_admin_0_countries" and select the "Filter" section. It will open this file (see above), and to fix this, I will click on "NAME" in the Fields section, and select Australia from the "Sample" section. It will produce `"NAME" = 'Australia'` once both steps are done, and once I click ok, it produces Australia.
 
 I also will use the `ne_50m_populated_places` from <a href="https://www.naturalearthdata.com/downloads/50m-cultural-vectors/50m-populated-places/">this link</a> and use the same process for the `ne_50m_admin_0_countries`. I will create a fields and sample that produces `""SOV0NAME" = 'Australia'`. 
