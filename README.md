@@ -47,8 +47,14 @@ I will do the same thing for my populated places file and export it the same pro
 ### Importing the data
 I will import the following data into the file:
 ```
-countries = gpd.read_file('/Users/markmarji/Documents/GitHub/Final-Project-MAP674/data/ne_50m_admin_0_australia.geojson')
-pop_places = gpd.read_file('/Users/markmarji/Documents/GitHub/Final-Project-MAP674/data/ne_50m_populated_places_australia.geojson')
+countries = gpd.read_file('../data/ne_50m_admin_0_australia.geojson')
+pop_places = gpd.read_file('../data/ne_50m_populated_places_australia.geojson')
+```
+
+Then I will add this to change the default figsize:
+```
+# change default figsize
+plt.rcParams['figure.figsize'] = (14, 8)
 ```
 
 ### Plotting the country
@@ -59,13 +65,12 @@ Once imported, I will include this below, which will produce a map of the world.
 ```
 fig, ax = plt.subplots()
 
-base_color = '#f0f0f0'
+base_color = '#000000'
 border_color = base_color
-marker_color = '#448ee4'
+marker_color = '#000000'
 
-bbox.plot(ax=ax, color=base_color, zorder=0);
-countries.plot(ax=ax, edgecolor=border_color, color='#ffffff', zorder=1);
-pop_places.plot(ax=ax, color=marker_color, markersize=1, zorder=2);
+countries.plot(ax=ax, edgecolor=border_color, color='#FF0000', zorder=1);
+pop_places.plot(ax=ax, color=marker_color, markersize=3, zorder=2);
 ```
 
 I will use `australia_poly = australia.geometry.unary_union` to determine what type of polygon is it. When I run it, it says that it is a MultiPolygon. Afterwards, I will use `australia_places = pop_places[pop_places.geometry.intersects(australia_poly)]` to create new GeoDataFrame of points that intersect with the clipping polygon.
