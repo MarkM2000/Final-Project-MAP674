@@ -3,8 +3,18 @@ This is the repository for my final project for MAP674. This project will see me
 
 ## Introduction
 This section will introduce the final project. It introduces the topic I plan to use for the project and the initial steps to do the project.
+
 ### Topic
 The topic of my final project will be related to Australia. This final project will involve several maps and datas featuring Australia.
+
+I have included this tuple example in the project to represent that I will focus on Australia.
+```
+coords = (-25, 133)
+print(coords)
+
+coords[0]
+```
+
 ### Initial steps
 The first thing I will do is create a Jupyter notebook file (`ipynb`), which creates the Python. The file will be named `Final-Project` as a `ipynb` file. I also will install Leafmap on conda, terminal, and on Python as I plan to explore the feature and apply it in the project.
 
