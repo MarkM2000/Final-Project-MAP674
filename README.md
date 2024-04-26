@@ -135,6 +135,3 @@ m
 
 ## Accessing the notebook
 I will have more details on how I completed this project in my notebook. To access it, click the assignment folder and it will show it.
-
-map = folium.Map(location=[13.406, 80.110], tiles="CartoDB Positron", zoom_start=9)
-map
