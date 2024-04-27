@@ -20,6 +20,8 @@ The first thing I will do is create a Jupyter notebook file (`ipynb`), which cre
 
 On Python, I will install it by adding `pip install leafmap`. When I import it, I will likely use one of the following on <a href="https://leafmap.org/get-started/">this link</a> or add `import leafmap` into my `ipynb` file. I also created a sample `ipynb` file called `install-leafmap`.
 
+This project involves the use of geojson and csv files. Therefore, I will create a folder called `data` to put those files in the folder.
+
 I will create a folder called `assignment`, which is where the `Final-Project` Jupyter Notebook Python file will be located.
 
 ## Jupyter File Steps
