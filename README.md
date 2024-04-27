@@ -119,7 +119,7 @@ australia_places.apply(lambda x: ax.annotate(text=x['NAME'],
 ```
 
 ## Leafmap
-Another feature I plan to use is Leafmap. I will use Australia and learn the Leafmap features. I will apply the steps that were used in <a href="https://leafmap.org/">this link</a> to create examples of Leafmaps of Australia. To create a Leafmap using Australia, I will use -25 and 133 for the center.
+Another feature I plan to use is Leafmap. First, I will create a Jupyter notebook file called `Australia-Leafmaps.ipynb`. I will use Australia and learn the Leafmap features. I will apply the steps that were used in <a href="https://leafmap.org/">this link</a> to create examples of Leafmaps of Australia. To create a Leafmap using Australia, I will use -25 and 133 for the center.
 
 I can create a simple Leafmap map for Australia. I did this by adding the following link:
 ```
