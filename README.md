@@ -50,7 +50,7 @@ The `ne_50m_admin_0_countries` file, which was original downloaded from <a href=
 
 I also will use the `ne_50m_populated_places` from <a href="https://www.naturalearthdata.com/downloads/50m-cultural-vectors/50m-populated-places/">this link</a> and use the same process for the `ne_50m_admin_0_countries`. I will create a fields and sample that produces `""SOV0NAME" = 'Australia'`. 
 
-I also plan to use the `georef-australia-state-millesime`, which was downloaded from <a href="https://data.opendatasoft.com/explore/dataset/georef-australia-state@public/export/?flg=en-us"/>this link</a> but I don't plan to filter this one.
+I also plan to use the `georef-australia-state-millesime`, which was downloaded from <a href="https://data.opendatasoft.com/explore/dataset/georef-australia-state@public/export/?flg=en-us">this link</a> but I don't plan to filter this one.
 
 ### Exporting the file
 ![image](screenshots/Exporting.png)
@@ -65,6 +65,7 @@ I will import the following data into the file:
 ```
 countries = gpd.read_file('../data/ne_50m_admin_0_australia.geojson')
 pop_places = gpd.read_file('../data/ne_50m_populated_places_australia.geojson')
+states = gpd.read_file('../data/georef-australia-state-millesime.geojson')
 ```
 
 Then I will add this to change the default figsize:
