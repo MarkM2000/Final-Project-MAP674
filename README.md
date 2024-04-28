@@ -50,11 +50,15 @@ The `ne_50m_admin_0_countries` file, which was original downloaded from <a href=
 
 I also will use the `ne_50m_populated_places` from <a href="https://www.naturalearthdata.com/downloads/50m-cultural-vectors/50m-populated-places/">this link</a> and use the same process for the `ne_50m_admin_0_countries`. I will create a fields and sample that produces `""SOV0NAME" = 'Australia'`. 
 
+I also plan to use the `georef-australia-state-millesime`, which was downloaded from <a href="https://data.opendatasoft.com/explore/dataset/georef-australia-state@public/export/?flg=en-us"/>this link</a> but I don't plan to filter this one.
+
 ### Exporting the file
 ![image](screenshots/Exporting.png)
 To export the file, right click it and select `Save Features As` in the export tab. The name of the file will be `ne_50m_admin_0_australia` and it will be as a geojson file. It looks something like this above, and when finished, select ok.
 
 I will do the same thing for my populated places file and export it the same process I did with the other file. The file will be called `ne_50m_populated_places_australia.geojson`.
+
+I also will do the same thing with the `georef-australia-state-millesime` file by using the same process I used for the previous two files above and export it as a geojson file called `georef-australia-state-millesime.geojson`.
 
 ### Importing the data
 I will import the following data into the file:
