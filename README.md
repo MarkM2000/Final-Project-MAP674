@@ -65,7 +65,7 @@ I will import the following data into the file:
 ```
 countries = gpd.read_file('../data/ne_50m_admin_0_australia.geojson')
 pop_places = gpd.read_file('../data/ne_50m_populated_places_australia.geojson')
-states = gpd.read_file('../data/georef-australia-state-millesime.geojson')
+states = gpd.read_file('georef-australia-state-millesime.geojson')
 ```
 
 Then I will add this to change the default figsize:
