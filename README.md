@@ -5,9 +5,9 @@ This is the repository for my final project for MAP674. This project will see me
 This section will introduce the final project. It introduces the topic I plan to use for the project and the initial steps to do the project.
 
 ### Topic
-The topic of my final project will be related to Australia. This final project will involve several maps and datas featuring Australia.
+The topic of my final project will be related to Australia. This final project will involve several maps and datas featuring Australia. The area I will focus on is Sydney.
 
-I have included this tuple example in the project to represent that I will focus on Australia.
+I have included this tuple example in the project to represent that I will focus on the Sydney area of Australia.
 ```
 coords = (-25, 133)
 print(coords)
