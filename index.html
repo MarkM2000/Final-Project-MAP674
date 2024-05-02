@@ -87,8 +87,23 @@
         </div>
     </section>
     <!-- HTML written here -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <canvas id="myChart" style="width:100%;max-width:700px"></canvas>
+
+    <!-- Add CSV file -->
+    <script src="../data/Electricity_consumption_by_sector.csv"></script>"
+
     <script>
+        const xValues = ["Italy", "France", "Spain", "USA", "Argentina"];
+        const yValues = [55, 49, 44, 24, 15];
+        const barColors = ["red", "green", "blue", "orange", "brown"];
+
         // JavaScript written here
+        const myChart = new Chart("myChart", {
+            type: "bar",
+            data: {},
+            options: {}
+        });
     </script>
 
 </body>
