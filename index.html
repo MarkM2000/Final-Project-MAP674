@@ -35,6 +35,28 @@
             /* addition here */
             letter-spacing: .04em;
         }
+
+        /* Use float property to make two-column layout */
+        .first-column {
+            float: left;
+            width: 49%;
+            padding-right: 2%;
+
+        }
+
+        .second-column {
+            float: left;
+            width: 49%;
+
+        }
+
+        /* Clear floats after columns */
+        .row::after {
+            content: "";
+            display: block;
+            clear: both;
+
+        }
     </style>
 </head>
 
